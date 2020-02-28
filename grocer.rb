@@ -96,9 +96,11 @@ end
 
 def checkout(cart, coupons)
   total = 0 
-  consolidate_cart(cart)
-  #set a total of 0 
-  #get consolidate_cart
+  newconsolidatedcart=consolidate_cart(cart)
+  withcoupons=apply_coupons(newconsolidatedcart,coupons)
+  
+  
+  
   #
   # Consult README for inputs and outputs
   #
