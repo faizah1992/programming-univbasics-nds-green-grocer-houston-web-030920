@@ -38,8 +38,13 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  pp cart 
-  pp coupons
+  #go to each item 
+  #check if any coupon for the item 
+  #if yes check count 
+  #if valid create a new hash 
+  #add it to cart 
+  #minus the count from the original item 
+  
   
   
   # Consult README for inputs and outputs
