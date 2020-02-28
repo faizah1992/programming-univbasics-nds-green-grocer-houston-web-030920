@@ -95,6 +95,11 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
+  total = 0 
+  consolidate_cart(cart)
+  #set a total of 0 
+  #get consolidate_cart
+  #
   # Consult README for inputs and outputs
   #
   # This method should call
