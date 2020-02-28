@@ -99,7 +99,14 @@ def checkout(cart, coupons)
   newconsolidatedcart=consolidate_cart(cart)
   withcoupons=apply_coupons(newconsolidatedcart,coupons)
   withclearance=apply_clearance(withcoupons)
-  
+  item_index=0 
+  while item_index<withclearance.count do 
+    price=withclearance[item_index][:price]
+    count=withclearance[item_index][:count]
+    total += price*count 
+   item_index += 1 
+ end 
+ total 
   
   
   #
