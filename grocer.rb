@@ -75,6 +75,16 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
+  item_index= 0 
+  while item_index<cart.count do 
+    item= cart[item_index]
+    if item[:clearance] == true 
+      item[:price] * .20
+      
+  
+  #if clearance is true 
+  #if yes apply 20% 
+  #
   
   # Consult README for inputs and outputs
   #
