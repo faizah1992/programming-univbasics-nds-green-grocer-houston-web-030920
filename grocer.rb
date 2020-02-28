@@ -20,7 +20,12 @@ def consolidate_cart(cart)
   while item_index<cart.count do 
    name = cart[item_index][:item]
    found= find_item_by_name_in_collection(name,newlist)
-   item[:count]
+   if found 
+     item[:count]+=1 
+   else
+     item[:count] = 1 
+   end
+   
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
