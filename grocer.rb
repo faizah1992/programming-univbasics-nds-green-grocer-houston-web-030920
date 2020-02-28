@@ -19,7 +19,7 @@ def consolidate_cart(cart)
   item_index=0 
   while item_index<cart.count do 
    item = cart[item_index]
-   
+   item[:count]
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
