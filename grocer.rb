@@ -79,7 +79,7 @@ def apply_clearance(cart)
   while item_index<cart.count do 
     item= cart[item_index]
     if item[:clearance] == true 
-      item[:price] = item[:price] - (item[:price] * .20)
+      item[:price] = (item[:price] - (item[:price] * (20.0/100)))
     end 
     item_index += 1 
   end 
