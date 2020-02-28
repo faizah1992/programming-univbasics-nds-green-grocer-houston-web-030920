@@ -1,5 +1,17 @@
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
+  item_index=0 
+  while item_index<collection.count do 
+    items=collection[item_index][:item]
+    included =find_item_by_name_in_collection(name,items)
+    if result[included]
+      result[included]==included
+    else
+      nil 
+    end 
+      
+    item_index+=1 
+  end 
+  # # Implement me first!
   #
   # Consult README for inputs and outputs
 end
