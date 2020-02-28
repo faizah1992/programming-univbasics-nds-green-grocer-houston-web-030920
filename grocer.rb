@@ -44,7 +44,8 @@ def apply_coupons(cart, coupons)
     foundcoupon = find_item_by_name_in_collection(name,coupons)
     item=cart[item_index]
     if foundcoupon
-      item[:count] >= 
+      if item[:count] >= foundcoupon[:num]
+        
       
   #go to each item 
   #check if any coupon for the item 
