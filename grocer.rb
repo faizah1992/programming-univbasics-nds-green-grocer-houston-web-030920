@@ -106,6 +106,10 @@ def checkout(cart, coupons)
     total += price*count 
    item_index += 1 
  end 
+ if total > 100
+   total = ((total) - (total*(10.0/100)))
+ end
+ 
  total 
   
   
