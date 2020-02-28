@@ -1,12 +1,14 @@
 def find_item_by_name_in_collection(name, collection)
   item_index=0 
+  result=nil
   while item_index<collection.count do 
     item=collection[item_index][:item]
     if item == name 
-      collection[item_index]
+      result= collection[item_index]
     end 
     item_index+=1 
   end 
+  result
   # # Implement me first!
   #
   # Consult README for inputs and outputs
