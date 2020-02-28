@@ -46,7 +46,7 @@ def apply_coupons(cart, coupons)
     if foundcoupon
       if item[:count] >= foundcoupon[:num]
         couponitem={:item => "#{name} W/COUPON", 
-                    :price => foundcoupon[:cost]/foundcoupon{:num]},
+                    :price => foundcoupon[:cost]/foundcoupon{:num]}, 
                     
                     
       
