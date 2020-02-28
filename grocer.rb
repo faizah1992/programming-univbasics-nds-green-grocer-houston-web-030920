@@ -38,6 +38,14 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  item_index=0 
+  while item_index<cart.count do 
+    name=cart[item_index][:item]
+    foundcoupon =find_item_by_name_in_collection(name,coupons)
+    item=cart[item_index]
+    if foundcoupon
+      item >= 
+      
   #go to each item 
   #check if any coupon for the item 
   #if yes check count 
