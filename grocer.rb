@@ -1,7 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
   item_index=0 
   while item_index<collection.count do 
-    items=collection[item_index][:item]
+    item=collection[item_index][:item]
     if result[included]
       result[included]==included
     else
