@@ -21,7 +21,15 @@ def consolidate_cart(cart)
   item= cart[item_index]
    name = cart[item_index][:item]
    found= find_item_by_name_in_collection(name,newlist)
-   if 
+   if found
+     found[:count] += 1 
+    else 
+      item[:count] = 1 
+      newlist.push(item)
+    end 
+    item_index += 1 
+  end 
+  newlist
    
   # Consult README for inputs and outputs
   #
