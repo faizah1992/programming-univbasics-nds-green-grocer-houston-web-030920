@@ -38,6 +38,8 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  pp cart 
+  pp coupons
   
   
   # Consult README for inputs and outputs
