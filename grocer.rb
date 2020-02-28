@@ -18,13 +18,10 @@ def consolidate_cart(cart)
   newlist=[]
   item_index=0 
   while item_index<cart.count do 
+  item= cart[item_index]
    name = cart[item_index][:item]
    found= find_item_by_name_in_collection(name,newlist)
-   if found 
-     item[:count]+=1 
-   else
-     item[:count] = 1 
-   end
+   if 
    
   # Consult README for inputs and outputs
   #
