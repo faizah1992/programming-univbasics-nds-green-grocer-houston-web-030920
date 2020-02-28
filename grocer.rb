@@ -18,8 +18,8 @@ def consolidate_cart(cart)
   newlist=[]
   item_index=0 
   while item_index<cart.count do 
-    cart[item_index][:item]
-    
+   item = cart[item_index]
+   
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
